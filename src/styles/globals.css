@@ -114,6 +114,15 @@ a {
   height: 100vw;
 }
 
+.navbar-about {
+  background-color: #000;
+  color: #FFF;
+}
+
+.navbar-about-link {
+  color: #FFF;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -351,4 +360,23 @@ a {
   color: #FFF;
   border-radius: 50px;
   font-size: 20px;
+}
+
+.about-container {
+  padding: 50px 200px
+}
+
+.about-heading {
+  font-size: 100px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-size: 20px;
+}
+
+.about-name {
+  font-size: 25px;
+  font-weight: 600;
 }

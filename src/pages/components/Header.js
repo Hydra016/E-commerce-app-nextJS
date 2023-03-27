@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import HeaderImage from './HeaderImage'
 
-function Header({dontShowHeaderImg}) {
+function Header({dontShowHeaderImg, aboutHeader}) {
  
   return (
     <>
