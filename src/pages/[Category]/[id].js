@@ -49,7 +49,7 @@ export const getStaticProps = async (context) => {
   const response = await fetch("https://fakestoreapi.com/products");
   const data = await response.json();
   const foundResult = data.find((cat) => cat.id == id);
-  console.log(foundResult)
+
   return {
     props: {
       data: foundResult
