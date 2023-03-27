@@ -16,7 +16,7 @@ function index({data}) {
 
 export default index
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch('https://fakestoreapi.com/products');
   const data = await response.json()
 
