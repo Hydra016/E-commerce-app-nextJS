@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import HeaderImage from './HeaderImage'
 
-function Header() {
+function Header({dontShowHeaderImg}) {
  
   return (
     <>
@@ -23,7 +24,7 @@ function Header() {
       </Link>
       </div>
     </div>
-    <nav className='navbar'>
+    <nav className={`navbar ${dontShowHeaderImg ? 'navbar-links-border' : null}`}>
         <div>
             <img src='https://cdn-icons-png.flaticon.com/128/4507/4507860.png' className='logo' />
         </div>
@@ -40,14 +41,9 @@ function Header() {
             <img src='https://cdn-icons-png.flaticon.com/128/649/649931.png' className='cart-icon' />
         </Link>
     </nav>
-    <div className='ad-container'>
-    <div className='heading-container'>
-    <h2 className='heading-main'>Summer<span className='heading-sub'>Collection</span></h2>
-    <span>get upto <span className='discount'>50%</span> off</span>
-    <Link className='shop_now' href='/'><span className='shop_now_text'>Shop Now</span></Link>
-    </div>
-    <img src='https://wallpaperaccess.com/full/388706.jpg' alt='sub-image' className='nav-image'/>
-    </div>
+    {
+      dontShowHeaderImg ? null : <HeaderImage />
+    }
     </>
   )
 }

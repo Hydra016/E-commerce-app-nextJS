@@ -14,7 +14,7 @@ function Card({ item }) {
           <p>{item.rating.rate}</p>
         </div>
       </div>
-      <Link className="button-outlined" href="/">
+      <Link className="button-outlined" href={`/${item.category}/${item.id}`}>
         View Product
       </Link>
     </div>

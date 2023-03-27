@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-function Content({ items, category }) {
+function Content({ items }) {
   return (
     <div className="content-container">
       <div className="content">

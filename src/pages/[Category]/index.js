@@ -1,5 +1,6 @@
 import React from "react";
 import Content from "../components/Content";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function Category({ data, category }) {
@@ -8,6 +9,7 @@ function Category({ data, category }) {
       <Header/>
       <h1 className='category-heading'>{category}</h1>
       <Content items={data} category={category} />
+      <Footer />
     </div>
   )
 }
