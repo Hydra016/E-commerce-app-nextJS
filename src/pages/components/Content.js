@@ -2,15 +2,17 @@ import React from "react";
 import Card from "./Card";
 
 function Content({ items }) {
-  return (
-    <div className="content-container">
-      <div className="content">
-        {items.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
+  if(items) {
+    return (
+      <div className="content-container">
+        <div className="content">
+          {items.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Content;
